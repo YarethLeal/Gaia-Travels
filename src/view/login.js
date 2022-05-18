@@ -1,8 +1,12 @@
-export default function Login(){
+import React from 'react'
+import "../../src/style/common.css"
+export default function Login() {
 
-    return(
-        <div className="body">
-             Login
-        </div>
+    return (
+        <main>
+            <div className="body">
+                Login
+            </div>
+        </main>
     )
 }
