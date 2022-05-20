@@ -1,0 +1,52 @@
+{
+    "Temp":[
+        {
+            "nombre": "Paquete 1",
+            "image": "playa.jpg",
+            "texto": "lorem impsum",
+            "lugar": "Costa Rica",
+            "precio": "$200",
+            "empresa": "Gaia S.A'"
+         },
+        {
+            "nombre": "Paquete 2",
+            "image": "playa.jpg",
+            "texto": "lorem impsum",
+            "lugar": "Costa Rica",
+            "precio": "$200",
+            "empresa": "Gaia S.A'"
+        },
+        {
+            "nombre": "Paquete 3",
+            "image": "playa.jpg",
+            "texto": "lorem impsum",
+            "lugar": "Costa Rica",
+            "precio": "$200",
+            "empresa": "Gaia S.A'"
+        },
+        {
+            "nombre": "Paquete 4",
+            "image": "playa.jpg",
+            "texto": "lorem impsum",
+            "lugar": "Costa Rica",
+            "precio": "$200",
+            "empresa": "Gaia S.A'"
+        },
+        {
+            "nombre": "Paquete 5",
+            "image": "playa.jpg",
+            "texto": "lorem impsum",
+            "lugar": "Costa Rica",
+            "precio": "$200",
+            "empresa": "Gaia S.A'"
+        },
+        {
+            "nombre": "Paquete 6",
+            "image": "playa.jpg",
+            "texto": "lorem impsum",
+            "lugar": "Costa Rica",
+            "precio": "$200",
+            "empresa": "Gaia S.A'"
+        }
+    ]
+}
