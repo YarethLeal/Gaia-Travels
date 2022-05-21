@@ -34,6 +34,7 @@ export default function NavBar({ children }) {
             <nav className="navbar navbar-expand-md navbar-dark bd-navbar fixed-top bg-dark">
                 <div className="container-xxl flex-wrap flex-md-nowrap">
                     <Link to="/" href='#' className="navbar-brand">
+                        <img src="../icons/gaia.png" alt="gaia logo" width="36" height="36"></img>
                         <span>Gaia Travels</span>
                     </Link>
                     <button className="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -57,7 +58,7 @@ export default function NavBar({ children }) {
                                 </Link>
                             </li>
                         </ul>
-                        <hr className="d-md-none text-white-50"/>
+                        <hr className="d-md-none text-white-50" />
                         <div className="flex-row flex-wrap ms-md-auto col-6 col-md-auto">
                             {loginLi()}
                             <ul className="dropdown-menu dropdown-menu-dark text-small shadow" aria-labelledby="dropdownUser1">

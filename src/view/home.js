@@ -1,5 +1,10 @@
 import "../../src/style/common.css"
 import "../../src/style/home.css"
+import Footer from "../components/layout/footer"
+import Button from "../components/layout_items/button"
+import Card from "../components/layout_items/card"
+import Form from "../components/layout_items/form"
+import Input from "../components/layout_items/input"
 export default function Home() {
 
     return (
@@ -13,12 +18,10 @@ export default function Home() {
                 <div className="carousel-inner">
                     <div className="carousel-item active">
                         <svg className="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777" /></svg>
-
                         <div className="container">
                             <div className="carousel-caption text-start">
-                                <h1>Example headline.</h1>
-                                <p>Some representative placeholder content for the first slide of the carousel.</p>
-                                <p><a className="btn btn-lg btn-primary" href="#">Sign up today</a></p>
+                                <h1>Bosque, playa o montaña</h1>
+                                <p>Nosotros te ayudamos a reconectar con la naturaleza</p>
                             </div>
                         </div>
                     </div>
@@ -27,9 +30,8 @@ export default function Home() {
 
                         <div className="container">
                             <div className="carousel-caption">
-                                <h1>Another example headline.</h1>
-                                <p>Some representative placeholder content for the second slide of the carousel.</p>
-                                <p><a className="btn btn-lg btn-primary" href="#">Learn more</a></p>
+                                <h1>Aventura</h1>
+                                <p>Te encontramos nuevos lugares para explorar a un comodo precio</p>
                             </div>
                         </div>
                     </div>
@@ -38,9 +40,8 @@ export default function Home() {
 
                         <div className="container">
                             <div className="carousel-caption text-end">
-                                <h1>One more for good measure.</h1>
-                                <p>Some representative placeholder content for the third slide of this carousel.</p>
-                                <p><a className="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+                                <h1>Solo o acompañado</h1>
+                                <p>Paquetes para parejas,familias o esos aventureros solitarios</p>
                             </div>
                         </div>
                     </div>
@@ -54,36 +55,44 @@ export default function Home() {
                     <span className="visually-hidden">Next</span>
                 </button>
             </div>
-            <div id="lugares"></div>
-            <div id="consulta">
-                <form className="row g-3">
-                    <div className="col-auto">
-                        <input
-                            type="email"
-                            placeholder="Email"
-                            name="email"
-                            className="px-3 py-3 placeholder-gray-400 text-gray-600 relative bg-white bg-white rounded text-sm border-0 shadow outline-none focus:outline-none focus:ring w-full"
-                            required
-                        />
-                    </div>
-                    <div className="col-auto">
-                        <textarea
-                            placeholder="Your message"
-                            name="message"
-                            className="px-3 py-3 placeholder-gray-400 text-gray-600 relative bg-white bg-white rounded text-sm border-0 shadow outline-none focus:outline-none focus:ring w-full"
-                            required
-                        />
-                    </div>
-                    <div className="col-auto">
-                        <button
-                            className="px-3 py-3 placeholder-gray-400 text-gray-600 relative rounded text-sm border-0 shadow outline-none focus:outline-none focus:ring w-full"
-                            type="submit"
-                        >
-                            Send a message
-                        </button>
-                    </div>
-                </form>
+            <div id="lugares" >
+                <h2 className="text-start">Sitios turisticos</h2>
+                <div id="tarjetas" className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 ">
+                    <Card props={{
+                        "nombre": "Costa Rica",
+                        "image": "playa.jpg",
+                        "texto": "lorem impsum",
+                        "lugar": "Costa Rica",
+                        "precio": "$200",
+                        "empresa": "Gaia S.A'"
+                    }} mostrar={false}></Card>
+                    <Card props={{
+                        "nombre": "Puerto Rico",
+                        "image": "playa.jpg",
+                        "texto": "lorem impsum",
+                        "lugar": "Costa Rica",
+                        "precio": "$200",
+                        "empresa": "Gaia S.A'"
+                    }} mostrar={false}></Card>
+                    <Card props={{
+                        "nombre": "Chile",
+                        "image": "playa.jpg",
+                        "texto": "lorem impsum",
+                        "lugar": "Costa Rica",
+                        "precio": "$200",
+                        "empresa": "Gaia S.A'"
+                    }} mostrar={false}></Card>
+                </div>
             </div>
-        </main>
+            <div id="consulta">
+                <h2 className="text-start">Contacto</h2>
+                <Form onSubmit={""} name="contacto">
+                    <Input errorMsg="Ingrese el email" className='px-3 py-3 placeholder-gray-400 text-gray-600 relative bg-white bg-white rounded text-sm border-0 shadow outline-none focus:outline-none focus:ring w-full mx-2' name='email' type="email" placeholder='Email:'></Input>
+                    <Input errorMsg="Ingrese la informacion" className='px-3 py-3 placeholder-gray-400 text-gray-600 relative bg-white bg-white rounded text-sm border-0 shadow outline-none focus:outline-none focus:ring w-full mx-2' name='descripcion' type="text" placeholder='Informacion:'></Input>
+                    <Button text="Enviar" />
+                </Form>
+            </div>
+            <Footer></Footer>
+        </main >
     )
 }
