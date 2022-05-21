@@ -1,5 +1,8 @@
 .App {
   text-align: center;
+  background-size: cover;
+  padding: 0;
+  background-image: radial-gradient(circle at 25.33% -2.91%, #ffffcc 0, #ffffc1 12.5%, #ffffb5 25%, #ffffaa 37.5%, #f2f29d 50%, #cdd690 62.5%, #afbc85 75%, #95a57b 87.5%, #819171 100%);
 }
 
 .App-logo {
@@ -32,7 +35,35 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+.anim{
+  color: #fff;
+  cursor: pointer;
+   border: 0;
+  padding: 30px 70px;
+  background-image: linear-gradient(to right, 
+    #ffdf93,
+    #ffe691,
+    #ebed95,
+    #d5f29d,
+    #caf4a3,
+    #bef7aa,
+    #a6faba,
+    #99fcc4,
+    #8dfdcd
+  );
+  /* background-image: linear-gradient(to right, #ffdf93 0, #ffe392 8.33%, #ffe691 16.67%, #f5e992 25%,
+   #ebed95 33.33%, #e0ef98 41.67%, #d5f29d 50%, #caf4a3 58.33%, #bef7aa 66.67%, #b2f8b2 75%, 
+   #a6faba 83.33%, #99fcc4 91.67%, #8dfdcd 100%); */
+  background-size: 700%;
+  transition: background-position 1s;
+}
+
+.anim:hover{
+   background-position: 50%;
 }

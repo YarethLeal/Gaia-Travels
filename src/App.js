@@ -9,7 +9,7 @@ import Mapa from './view/mapa.js'
 
 function App() {
   return (
-    <div className="App">
+    <div className="App anim p-0">
       <BrowserRouter>
       <NavBar/>
         <Routes>
